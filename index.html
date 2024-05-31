@@ -19,6 +19,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 2rem;
         }
 
         .choices button {
@@ -35,6 +36,15 @@
             text-align: center;
             width: 80%;
         }
+
+        .score {
+            font-size: 1.2rem;
+        }
+
+        .scores {
+            margin-top: 2rem;
+        }
+
     </style>
 </head>
 <body>
@@ -44,6 +54,17 @@
             <button onclick="playGame(event)">Rock</button>
             <button onclick="playGame(event)">Paper</button>
             <button onclick="playGame(event)">Scissors</button>
+        </section>
+        <hr/>
+        <section class="scores">
+            <div>
+                <h2>Player: </h2>
+                <p class="score" id="js-player-score">0</p>
+            </div>
+            <div>
+                <h2>Computer: </h2>
+                <p class="score" id="js-computer-score">0</p>
+            </div>
         </section>
     </main>
     <script type="text/javascript" src="/rps.js"></script>

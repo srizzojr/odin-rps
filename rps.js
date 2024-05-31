@@ -7,11 +7,11 @@ function playGame() {
 }
 
 function evalWinCondition() {
-    
+
 }
 
-function setScore() {
-
+function setScore(winner) {
+   
 }
 
 function endGame() {
