@@ -22,7 +22,8 @@
             margin-bottom: 2rem;
         }
 
-        .choices button {
+        .choices button,
+        .restart button {
             padding: 0.5rem 1rem;
             margin: 0.5rem;
         }
@@ -51,9 +52,9 @@
     <main>
         <h1>Rock Paper Scissors JS</h1>
         <section class="choices">
-            <button onclick="playGame(event)">Rock</button>
-            <button onclick="playGame(event)">Paper</button>
-            <button onclick="playGame(event)">Scissors</button>
+            <button onclick="playGame('rock')">Rock</button>
+            <button onclick="playGame('paper')">Paper</button>
+            <button onclick="playGame('scissors')">Scissors</button>
         </section>
         <hr/>
         <section class="scores">
@@ -65,6 +66,9 @@
                 <h2>Computer: </h2>
                 <p class="score" id="js-computer-score">0</p>
             </div>
+        </section>
+        <section class="restart">
+            <button onclick="restartGame()">Restart Game</button>
         </section>
     </main>
     <script type="text/javascript" src="/rps.js"></script>
