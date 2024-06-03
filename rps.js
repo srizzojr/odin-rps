@@ -107,7 +107,7 @@ function restartGame() {
 
 // Function to play a round
 function playGame(pChoice) {
-    if (numOfRounds > maxRounds) {
+    if (numOfRounds === maxRounds) {
         showGameOver();
     }
 
@@ -117,10 +117,6 @@ function playGame(pChoice) {
         messageContainer.innerText = `Game has started: Round ${parseInt(numOfRounds + 1)} of ${maxRounds}\nComputer chose ${computerChoice.toUpperCase()}\n`;
         const winner = evalWinCondition(playerChoice, computerChoice);
         setScore(winner);
-
-        if (numOfRounds === maxRounds) {
-            showGameOver();
-        }
     }
 
     numOfRounds++;
