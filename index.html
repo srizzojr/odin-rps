@@ -51,10 +51,13 @@
 <body>
     <main>
         <h1>Rock Paper Scissors JS</h1>
+        <section>
+            <p id="js-message">Select an option to start the game</p>
+        </section>
         <section class="choices">
-            <button onclick="playGame('rock')">Rock</button>
-            <button onclick="playGame('paper')">Paper</button>
-            <button onclick="playGame('scissors')">Scissors</button>
+            <button onclick="setPlayerChoice('rock')">Rock</button>
+            <button onclick="setPlayerChoice('paper')">Paper</button>
+            <button onclick="setPlayerChoice('scissors')">Scissors</button>
         </section>
         <hr/>
         <section class="scores">
