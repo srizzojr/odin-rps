@@ -107,7 +107,7 @@ function restartGame() {
 
 // Function to play a round
 function playGame(pChoice) {
-    if (numOfRounds === maxRounds) {
+    if (numOfRounds >= maxRounds) {
         showGameOver();
     }
 
